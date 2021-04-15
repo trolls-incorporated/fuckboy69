@@ -29,10 +29,8 @@ module.exports = async (client, message) => {
       "This command is unavailable via private message. Please run this command in a guild."
     );
 
-  message.flags = [];
-  while (args[0] && args[0][0] === "-") {
-    message.flags.push(args.shift().slice(1));
-  }
+  if (!client.config.owners.includes(message.author.id))
+    return message.channel.send("you do not have permissions to do this");
   client.logger.cmd(
     `[CMD] ${
       message.author.username

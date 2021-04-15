@@ -17,8 +17,6 @@ client.logger = require("./modules/logger");
 
 require("./modules/functions.js")(client);
 
-client.owners = [];
-
 client.commands = new Enmap();
 client.aliases = new Enmap();
 

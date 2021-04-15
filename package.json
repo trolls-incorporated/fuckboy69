@@ -1,0 +1,24 @@
+{
+  "name": "fuckboy69",
+  "version": "1.0.0",
+  "description": "ss-18, but on discord",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trolls-incorporated/fuckboy69"
+  },
+  "author": "urmom",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.2",
+    "enmap": "^5.8.3",
+    "chalk": "^4.1.0",
+    "moment": "^2.29.1"
+  }
+}
